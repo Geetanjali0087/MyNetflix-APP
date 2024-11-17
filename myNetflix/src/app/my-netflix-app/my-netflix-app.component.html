@@ -1,0 +1,43 @@
+<div class="parent">
+    <div class="background">
+        <img [src]="backGroundPath" alt="Background Image">
+    </div>
+
+    <div class="navbar">
+        <div class="logo">
+            <img [src] = "imagePath">
+        </div>
+        <div class="button">
+            <select class="select">
+                <option value="1">
+                    <button id="button1">English</button>
+                </option>
+                <option value="2">
+                    <button id="button1">Hindi</button>
+                </option>
+            </select>
+            <button (click)="navigateToLogin()" id="button2">Sign in</button>
+        </div>
+    </div>
+    <div class="mainContent">
+        <div class="content">
+            <h1>
+                Unlimited Movies, TV <br>
+                shows and more
+            </h1>
+            <p style="font-size: 20px">Starts at ₹149. Cancel anytime.</p>
+            <p style="font-size: 15px">
+                Ready to watch? Enter your email or restart your membership.
+            </p>
+        </div>
+
+        <div class="form">
+            <form action="email">
+                <div class="input">
+                    <input type="email" placeholder="Email address">
+                    <button class="button_form">Get Started &gt;</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

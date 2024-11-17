@@ -1,0 +1,99 @@
+.parent {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  /* display: flex; */
+  background-color: rgba(11, 5, 5, 0.5);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; 
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* This ensures the image covers the entire background */
+}
+
+.navbar {
+  width: 100%;
+  padding-bottom: 150px;
+  background: transparent;
+}
+
+.logo img {
+  height: 80px;
+  width: 100px;
+  /* padding-left: 100px; */
+}
+
+.button {
+  height: 40px;
+  display: flex;
+  gap: 10px;
+}
+
+.select#button1 {
+  border-radius: 10px;
+  width: 100px;
+  background-color: black;
+  color: white;
+}
+
+#button2 {
+  border-radius: 10px;
+  background-color: rgb(231, 28, 28);
+  color: white;
+  width: 100px;
+}
+
+.content {
+  background: transparent;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.form {
+  text-align: center;
+  padding-bottom: 190px;
+}
+
+.input {
+  display: flex;
+  position: relative;
+}
+
+.input input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+  background: transparent;
+  border: 1px solid white;
+}
+
+.button_form {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
